@@ -1,27 +1,16 @@
-import logo from './logo.svg';
-import HomeDiary from './modules/diary/components/Home/HomeDiary';
 import './App.css';
+import HeadacheModule from './modules/diary/components/headache/HeadacheModule';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container mx-auto px-10 h-5/6">
+      <div className="bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 ...">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Headache Diary          
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div>
-        <HomeDiary></HomeDiary>
-      </div>
+        <HeadacheModule></HeadacheModule>        
+      </div>      
+
     </div>
   );
 }
