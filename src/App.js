@@ -1,5 +1,6 @@
 import './App.css';
 import HeadacheModule from './modules/diary/components/headache/HeadacheModule';
+import { withAuthenticator, AmplifySignOut  } from '@aws-amplify/ui-react'
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
         </p>
         <HeadacheModule></HeadacheModule>        
       </div>      
-
+      <AmplifySignOut />
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
