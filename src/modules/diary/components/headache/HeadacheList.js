@@ -5,7 +5,7 @@ const HeadacheList = props => {
     
     return (
         <div>
-            <table>
+            <table className="table-auto">
                 <thead>
                     <tr>
                         <th>Level</th>
